@@ -1,0 +1,47 @@
+section.add {
+  display: flex;
+  justify-content: center;
+}
+section.add .add__wrapper {
+  width: 948px;
+  margin: 0 40px;
+}
+section.add .add__form .form__input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  padding: 16px;
+  border-radius: 20px;
+  border: #252525 1px solid;
+  font-family: "PT Mono", sans;
+  font-size: 24px;
+}
+section.add .add__form .form__input input,
+section.add .add__form .form__input textarea {
+  width: 100%;
+  border: none;
+  margin-left: 20px;
+}
+section.add .add__form .form__input input:focus,
+section.add .add__form .form__input textarea:focus {
+  outline: none;
+}
+section.add .add__form .form__input textarea {
+  min-height: 160px;
+  max-height: 500px;
+  width: 100%;
+  resize: vertical;
+}
+section.add .add__form button {
+  width: 100%;
+  font-size: 24px;
+  background: #252525;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+section.add .add__form button:hover {
+  background: #454545;
+}

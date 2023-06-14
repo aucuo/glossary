@@ -1,0 +1,84 @@
+@import '../../scss/_variables.scss';
+
+body {
+    font-family: 'PT Serif', serif;
+    background: $white;
+
+    .app-wrapper-content {
+        display: flex;
+        justify-content: center;
+        margin-top: 141px;
+        padding: 60px 0;
+        min-height: calc(100vh - 141px - 220px);
+    }
+
+    h2 {
+        font-size: 48px;
+    }
+
+    p {
+        font-size: 24px;
+    }
+
+    * {
+        color: $black;
+    }
+}
+
+header.menu {
+    position: fixed;
+    top: 0;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 24px 5%;
+    background: $white;
+    border-radius: 0 0 20px 20px;
+    border-bottom: $black 1px solid;
+    user-select: none;
+
+    .menu__logo {
+        display: flex;
+
+        .menu__name {
+            margin-left: 64px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            h1 {
+                width: fit-content;
+                margin: 0;
+            }
+
+            span {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .menu__items {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            color: $black;
+            font-size: 24px;
+
+            &:not(:last-child) {
+                margin-right: 64px;
+            }
+
+            &:last-child {
+                font-weight: bold;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

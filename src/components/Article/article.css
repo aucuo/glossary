@@ -1,0 +1,31 @@
+section.article {
+  display: flex;
+  justify-content: center;
+}
+section.article .article__wrapper {
+  width: 948px;
+  margin: 0 40px;
+}
+section.article .article__wrapper .article__buttons {
+  display: flex;
+}
+section.article .article__wrapper .article__buttons a {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  padding: 16px;
+  border-radius: 20px;
+  border: #252525 1px solid;
+  text-decoration: none;
+  transition: 0.3s;
+}
+section.article .article__wrapper .article__buttons a:nth-child(2) {
+  margin: 0 16px;
+}
+section.article .article__wrapper .article__buttons a span {
+  margin-left: 16px;
+}
+section.article .article__wrapper .article__buttons a:hover {
+  background: rgba(0, 0, 0, 0.1);
+}

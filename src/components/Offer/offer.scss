@@ -1,0 +1,68 @@
+@import '../../scss/_variables.scss';
+
+section.offer {
+    display: flex;
+    justify-content: center;
+
+    .offer__wrapper {
+        width: 948px;
+        margin: 0 40px;
+    }
+
+    .offer__form {
+        .form__userinfo {
+            display: flex;
+            justify-content: space-between;
+
+            .form__input {
+                width: 100%;
+
+                &:nth-child(2) {
+                    margin-left: 32px;
+                }
+            }
+        }
+        .form__input {
+            display: flex;
+            align-items: center;
+            margin-bottom: 32px;
+            padding: 16px;
+            border-radius: 20px;
+            border: $black 1px solid;
+            font-family: 'PT Mono', sans;
+            font-size: 24px;
+
+            input,
+            textarea {
+                width: 100%;
+                border: none;
+                margin-left: 20px;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            textarea {
+                min-height: 160px;
+                max-height: 500px;
+                width: 100%;
+                resize: vertical;
+            }
+        }
+        button {
+            width: 100%;
+            font-size: 24px;
+            background: $black;
+            color: $white;
+            border-radius: 20px;
+            padding: 16px;
+            cursor: pointer;
+            transition: .3s;
+
+            &:hover {
+                background: $lblack;
+            }
+        }
+    }
+}

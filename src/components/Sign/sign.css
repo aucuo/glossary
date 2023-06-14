@@ -1,0 +1,68 @@
+section.sign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.sign .sign__wrapper a.sign__button {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  padding: 16px;
+  border-radius: 20px;
+  border: #252525 1px solid;
+  text-decoration: none;
+  margin-bottom: 16px;
+  transition: 0.3s;
+}
+section.sign .sign__wrapper a.sign__button span {
+  margin-left: 16px;
+}
+section.sign .sign__wrapper a.sign__button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+section.sign .sign__wrapper .sign__card {
+  max-width: 390px;
+  padding: 32px;
+  border-radius: 20px;
+  border: #252525 1px solid;
+}
+section.sign .sign__wrapper .sign__card .card__text {
+  margin-bottom: 32px;
+}
+section.sign .sign__wrapper .sign__card .card__text h2 {
+  margin: 0 0 16px 0;
+}
+section.sign .sign__wrapper .sign__card .card__text p {
+  margin: 0;
+}
+section.sign .sign__wrapper .sign__card .card__form .form__input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  padding: 16px;
+  border-radius: 20px;
+  border: #252525 1px solid;
+  font-family: "PT Mono", sans;
+  font-size: 24px;
+}
+section.sign .sign__wrapper .sign__card .card__form .form__input input {
+  border: none;
+  margin-left: 20px;
+}
+section.sign .sign__wrapper .sign__card .card__form .form__input input:focus {
+  outline: none;
+}
+section.sign .sign__wrapper .sign__card .card__form button {
+  width: 100%;
+  font-size: 24px;
+  background: #252525;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+section.sign .sign__wrapper .sign__card .card__form button:hover {
+  background: #454545;
+}
