@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -10,17 +10,26 @@ const Sign = React.lazy(() => import('./components/Sign/Sign'));
 const Article = React.lazy(() => import('./components/Article/Article'));
 
 function App() {
+    const [showPreloader, setShowPreloader] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShowPreloader(false);
+        }, 1000);
+        return () => clearTimeout(timer);
+    }, []);
     return (
         <BrowserRouter>
+            {showPreloader ? <Preloader /> : null}
             <div className='app-wrapper'>
                 <Header />
                 <div className='app-wrapper-content'>
                     <Routes>
-                        <Route path='/' Component={Index} />
-                        <Route path='/offer' Component={Offer} />
-                        <Route path='/add' Component={Add} />
-                        <Route path='/article' Component={Article} />
-                        <Route path='/sign' Component={Sign} />
+                        <Route path='/' element={<Index />} />
+                        <Route path='/offer' element={<Offer />} />
+                        <Route path='/add' element={<Add />} />
+                        <Route path='/article' element={<Article />} />
+                        <Route path='/sign' element={<Sign />} />
                     </Routes>
                 </div>
                 <Footer />

@@ -24,7 +24,7 @@ function Sign() {
                         </div>
                         <div className="form__input">
                             <img src={passwordIcon} alt="Password icon" />
-                            <input name="password" className="form__input-password" type="text" placeholder="Пароль" required />
+                            <input name="password" className="form__input-password" type="password" placeholder="Пароль" required />
                         </div>
                         <button>Войти</button>
                     </form>
